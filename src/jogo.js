@@ -12,6 +12,11 @@ function buscaPalpite() {
     return campo.value;
 }
 
+function limpaPalpite() {
+    var campo = document.querySelector("input");
+    campo.value = "";
+}
+
 function sortear() {
     var palpite = buscaPalpite();  
     if (validaPalpite(palpite)== true){  
@@ -22,6 +27,7 @@ function sortear() {
     else {
         exibirResultado("Você deve digitar um número de 1 a 6");
     }
+    limpaPalpite();
 }
 
 function exibirResultado(mensagem) {
