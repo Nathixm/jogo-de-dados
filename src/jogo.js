@@ -1,9 +1,9 @@
 function verificaAcerto(sorteado, escolhido) {
     if (sorteado == escolhido) {
-        return "Parabéns! Você acertou";
+        return "Parabéns! Você acertou, o número sorteado foi o " + sorteado;
     }
     else {
-        return "Que pena, você errou";
+        return "Que pena, você errou, o número sorteado foi " + sorteado + " mas você escolheu o " + escolhido;
     }
 }
 
